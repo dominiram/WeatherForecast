@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="enter_name_of_the_city">Enter name of the city</string>
+    <string name="search">Search</string>
+    <string name="min_label">Min:</string>
+    <string name="temperature_label">Temperature:</string>
+    <string name="weather_info">Weather info:</string>
+    <string name="weather_description">Weather description:</string>
+    <string name="weather_icon_description">weather_icon</string>
+    <string name="max_label">Max:</string>
+    <string name="avg_label">Avg:</string>
+</resources>

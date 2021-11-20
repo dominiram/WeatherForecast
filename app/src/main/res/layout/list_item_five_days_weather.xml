@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:paddingEnd="12dp"
+    android:paddingStart="12dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name_of_the_day"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Monday" />
+
+    <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/max_temp_value"
+        app:layout_constraintStart_toStartOf="@+id/min_temp_label"
+        app:layout_constraintTop_toBottomOf="@+id/name_of_the_day" />
+
+    <TextView
+        android:id="@+id/min_temp_label"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:text="@string/min_label"
+        app:layout_constraintStart_toStartOf="@+id/name_of_the_day"
+        app:layout_constraintTop_toBottomOf="@+id/list_item_icon" />
+
+    <TextView
+        android:id="@+id/min_temp_value"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/min_temp_label"
+        app:layout_constraintStart_toEndOf="@+id/min_temp_label"
+        app:layout_constraintTop_toTopOf="@+id/min_temp_label" />
+
+    <TextView
+        android:id="@+id/curr_temp_label"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/avg_label"
+        app:layout_constraintBottom_toBottomOf="@+id/min_temp_value"
+        app:layout_constraintStart_toEndOf="@+id/min_temp_value"
+        app:layout_constraintTop_toTopOf="@+id/min_temp_value" />
+
+    <TextView
+        android:id="@+id/curr_temp_value"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/curr_temp_label"
+        app:layout_constraintStart_toEndOf="@+id/curr_temp_label"
+        app:layout_constraintTop_toTopOf="@+id/curr_temp_label" />
+
+    <TextView
+        android:id="@+id/max_temp_label"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/max_label"
+        app:layout_constraintBottom_toBottomOf="@+id/curr_temp_value"
+        app:layout_constraintStart_toEndOf="@+id/curr_temp_value"
+        app:layout_constraintTop_toTopOf="@+id/curr_temp_value" />
+
+    <TextView
+        android:id="@+id/max_temp_value"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/max_temp_label"
+        app:layout_constraintStart_toEndOf="@+id/max_temp_label"
+        app:layout_constraintTop_toTopOf="@+id/max_temp_label" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

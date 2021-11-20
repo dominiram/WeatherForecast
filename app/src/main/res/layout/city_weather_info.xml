@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/min_temp_label"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/min_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/min_temp_value"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/min_temp_label"
+        app:layout_constraintStart_toEndOf="@+id/min_temp_label"
+        app:layout_constraintTop_toTopOf="@+id/min_temp_label" />
+
+    <TextView
+        android:id="@+id/curr_temp_label"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature_label"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/max_temp_label"
+        app:layout_constraintStart_toEndOf="@+id/min_temp_value"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/curr_temp_value"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/curr_temp_label"
+        app:layout_constraintStart_toEndOf="@+id/curr_temp_label"
+        app:layout_constraintTop_toTopOf="@+id/curr_temp_label" />
+
+    <TextView
+        android:id="@+id/max_temp_label"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/max_label"
+        app:layout_constraintEnd_toStartOf="@+id/max_temp_value"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/max_temp_value"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/max_temp_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/max_temp_label" />
+
+    <TextView
+        android:id="@+id/weather_info_label"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weather_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min_temp_label" />
+
+    <TextView
+        android:id="@+id/weather_info_value"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/weather_info_label"
+        app:layout_constraintStart_toEndOf="@+id/weather_info_label"
+        app:layout_constraintTop_toTopOf="@+id/weather_info_label" />
+
+    <TextView
+        android:id="@+id/weather_description_label"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weather_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_info_label" />
+
+    <TextView
+        android:id="@+id/weather_description_value"
+        style="@style/city_weather_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/weather_description_label"
+        app:layout_constraintStart_toEndOf="@+id/weather_description_label"
+        app:layout_constraintTop_toTopOf="@+id/weather_description_label" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
